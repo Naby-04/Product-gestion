@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   /* border-help */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 /*------------ root ------------*/
 :root {
@@ -16,3 +16,92 @@
   --Rose500: hsl(12, 20%, 44%);
   --Rose900: hsl(14, 65%, 9%);
 }
+body {
+  background-color: var(--Rose100);
+}
+h1 {
+  font-weight: 900;
+}
+h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--red);
+}
+/*---------------- button ----------------*/
+.btn-active {
+  padding: 10px;
+  top: 190px;
+  border: 1px solid var(--Rose500);
+  background: var(--Rose50);
+  transition: all 0.2s ease-in-out;
+  font-size: 12px;
+  font-weight: 700;
+}
+.btn-active:hover {
+  color: var(--red);
+  border: 1px solid var(--red);
+  background: var(--Rose50);
+}
+.submit-button {
+  padding: 10px;
+  top: 190px;
+  background: var(--red);
+  border: none;
+  color: var(--Rose50);
+  transition: all 0.2s ease-in-out;
+  font-size: 12px;
+  font-weight: 700;
+}
+#QuantityBtn {
+  display: none !important;
+}
+/*---------------- button exit ----------------*/
+/*------------------ images ------------------*/
+img {
+  object-fit: contain;
+}
+/*------------------ images exit ------------------*/
+/*--------------------- card ---------------------*/
+.card {
+  border: none;
+  background: transparent;
+}
+.DishName {
+  color: var(--Rose300);
+  font-size: 12px;
+}
+.card-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+.Dishprice {
+  color: var(--red);
+  font-size: 16px;
+  font-weight: 700;
+}
+.card > img:hover {
+  border: 2px solid var(--red);
+}
+/*--------------------- card exit ---------------------*/
+/*---------------------- cart ----------------------*/
+.item-name {
+  font-weight: 700;
+}
+.delete-btn {
+  border: 1px solid var(--Rose500);
+  padding: 1px;
+  background: transparent;
+}
+
+.item-total {
+  color: var(--red);
+  font-weight: 600;
+}
+.unit-price {
+  color: var(--Rose300);
+}
+.total-price {
+  font-size: 25px;
+  font-weight: 700;
+}
+/*---------------------- cart exit ----------------------*/
